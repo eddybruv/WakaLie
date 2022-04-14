@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: rgb(29, 28, 28);
+  color: white;
+}
+
+/*
+  ==================================
+    Sign Up page
+  ================================== 
+*/ 
+
+.sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.signup-details {
+  width: 50%;
+  height: fit-content;
+  padding: 1rem
+}
+
+h2.create-account {
+  color: orange;
+  font-weight: bold;
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+
+.signup-details form {
+  width: 90%;
+}
+
+.signup-details input {
+  margin-bottom: 1rem;
+  margin-top: .5rem;  
+  padding: .7rem;
+  border-radius: 10px;
+  width: 100%;
+  font-size: 1.5rem;
+  outline: none;
+}
+
+.signup-details label {
+  font-size: 1.5rem;
+}
+
+.gender-dob {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gender-dob div {
+  width: 47%;
+}
+
+.signup-details .sign-up-button {
+  width: 100%;
+  padding: 1rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  background-color: orange;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+/*
+  ==================================
+    Login page
+  ================================== 
+*/
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.login-details {
+  width: 50%;
+  height: fit-content;
+  padding: 1rem
+}
+
+h2.login-account {
+  color: orange;
+  font-weight: bold;
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+
+.login-details form {
+  width: 90%;
+}
+
+.login-details input {
+  margin-bottom: 1rem;
+  margin-top: .5rem;  
+  padding: .7rem;
+  border-radius: 10px;
+  width: 100%;
+  font-size: 1.5rem;
+  outline: none;
+}
+
+.login-details .login-button {
+  width: 100%;
+  padding: 1rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  background-color: orange;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+.login-details label {
+  font-size: 1.5rem;
+}
+
+/* 
+  ==========================
+  Personal Card
+  ==========================
+*/
+
+.personal-card {
+  width: 40%;
+  padding: 1rem;
+  background-color: #373737;
+  display: flex;
+  gap: 1rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.personal-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+
+.personal-card .name-time-message {
+  width: 90%;
+}
+
+.name-time-message .user-name {
+  font-size: 1.3rem;
+  letter-spacing: .1rem;
+  font-weight: 400;
+}
+
+.name-time-message .time {
+  font-weight: 100;
+}
+
+.ellipsis {
+  font-size: 1.5rem;
+}
+
+.ellipsis:hover {
+  cursor: pointer;
+}
+
+.name-time-message .message {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-bottom: .5rem;
+}
