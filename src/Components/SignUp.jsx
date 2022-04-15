@@ -1,29 +1,32 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function SignUp() {
+  let navigate = useNavigate();
   return (
     <div className="sign-up">
       <div className="signup-details">
         <h2 className="create-account">Create Account</h2>
         <form action="" className="signup-form">
           <label htmlFor="name">Name</label> <br />
-          <input type="text" id="name" /> <br />
+          <input type="text" name="name" /> <br />
           <label htmlFor="phone-number">Phone Number</label> <br />
-          <input type="number" id="phone-number" /> <br />
+          <input type="number" name="phone-number" /> <br />
           <div className="gender-dob">
             <div>
               <label htmlFor="gender">Gender</label> <br />
-              <input type="text" id="gender" />
+              <input type="text" name="gender" />
             </div>
             <div>
               <label htmlFor="dob">DoB</label> <br />
-              <input type="date" id="dob" />
+              <input type="date" name="dob" />
             </div>
           </div>
           <label htmlFor="password">Password</label> <br />
-          <input type="password" id="password" />
-
-          <button className="sign-up-button">Sign Up</button>
+          <input type="password" name="password" />
+          <button className="sign-up-button" onClick={() => {
+            navigate('/timeline');
+          }}>Sign Up</button>
         </form>
       </div>
     </div>
