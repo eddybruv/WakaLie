@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap");
 
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -11,11 +11,71 @@ body {
   color: white;
 }
 
+/* 
+  ==================================
+  Welcome Page
+  ==================================
+*/
+.welcome-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.welcome h2 {
+  display: flex;
+  align-items: center;
+  font-size: 4.5rem;
+  margin-bottom: 2rem;
+  height: fit-content;
+}
+
+.welcome h1 {
+  display: inline-block;
+  color: orange;
+  padding: 0 1rem;
+}
+
+.welcome .welcome-text {
+  font-size: 2rem;
+  font-weight: 100;
+  width: fit-content;
+  margin: 0 auto;
+  font-style: italic;
+}
+
+.welcome .signup-login {
+  margin-top: 3rem;
+  justify-content: center;
+  gap: 2rem;
+  display: flex;
+}
+
+.welcome .signup-login p {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.welcome .signup-login button {
+  width: 100%;
+  background-color: orange;
+  color: white;
+  border-radius: 10px;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.welcome .signup-login button:hover {
+  cursor: pointer;
+}
+
 /*
   ==================================
     Sign Up page
   ================================== 
-*/ 
+*/
 
 .sign-up {
   display: flex;
@@ -26,28 +86,28 @@ body {
 }
 
 .signup-details {
-  width: 50%;
+  width: 40%;
   height: fit-content;
-  padding: 1rem
+  padding: 1rem;
 }
 
 h2.create-account {
   color: orange;
   font-weight: bold;
-  font-size: 2.5rem;
-  padding: 1rem 0;
+  font-size: 4.5rem;
+  padding: 3rem 0;
 }
 
 .signup-details form {
-  width: 90%;
+  width: 100%;
 }
 
 .signup-details input {
-  margin-bottom: 1rem;
-  margin-top: .5rem;  
-  padding: .7rem;
-  border-radius: 10px;
   width: 100%;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  padding: 0.7rem;
+  border-radius: 10px;
   font-size: 1.5rem;
   outline: none;
 }
@@ -74,6 +134,7 @@ h2.create-account {
   color: white;
   font-size: 1.5rem;
   border-radius: 10px;
+  margin-left: 0.5rem;
 }
 
 /*
@@ -92,13 +153,13 @@ h2.create-account {
 .login-details {
   width: 50%;
   height: fit-content;
-  padding: 1rem
+  padding: 1rem;
 }
 
 h2.login-account {
   color: orange;
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 4.5rem;
   padding: 1rem 0;
 }
 
@@ -107,11 +168,11 @@ h2.login-account {
 }
 
 .login-details input {
-  margin-bottom: 1rem;
-  margin-top: .5rem;  
-  padding: .7rem;
-  border-radius: 10px;
   width: 100%;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  padding: 0.7rem;
+  border-radius: 10px;
   font-size: 1.5rem;
   outline: none;
 }
@@ -133,12 +194,108 @@ h2.login-account {
 
 /* 
   ==========================
+  Timeline Page(comments)
+  ==========================
+*/
+.timeline-page {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.timeline-container {
+  display: flex;
+  gap: 3rem;
+}
+
+.timeline-container .user-panel {
+  width: 15vw;
+  height: 90vh;
+  border: none;
+  background-color: #302f2f;
+  border-radius: 20px;
+  position: fixed;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-panel img.user-img {
+  margin-top: 2rem;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-panel .username {
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.user-panel ul {
+  list-style: none;
+  width: 90%;
+  padding: 2rem 0 2rem 1rem;
+  background-color: #414141;
+  border-radius: 20px;
+}
+
+.user-panel ul li {
+  width: 95%;
+}
+
+.user-panel ul li:hover {
+  border-right: 10px solid orange;
+}
+
+.user-panel ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  padding: 1rem;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.user-panel ul li a:hover {
+  background-color: #6f5d30;
+}
+
+.user-panel .logout {
+  margin-top: auto;
+}
+
+.user-panel .logout a{
+  text-decoration: none;
+  color: orange;
+  font-size: 1.5rem;
+}
+
+.timeline-container .feed {
+  width: 50vw;
+  margin-left: 20vw;
+  background-color: #302f2f;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.timeline-container .feed-text {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+/* 
+  ==========================
   Personal Card
   ==========================
 */
 
 .personal-card {
-  width: 40%;
+  width: 95%;
   padding: 1rem;
   background-color: #373737;
   display: flex;
@@ -159,7 +316,7 @@ h2.login-account {
 
 .name-time-message .user-name {
   font-size: 1.3rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   font-weight: 400;
 }
 
@@ -179,5 +336,35 @@ h2.login-account {
   margin-top: 1rem;
   font-size: 1.3rem;
   font-weight: 300;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* 
+  =========================
+  New Post
+  =========================
+*/
+
+.post-form textarea {
+  height: 10vh;
+  width: 90%;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  border-radius: 10px;
+  background-color:#414141;
+}
+
+.post-form button {
+  margin-top: 1rem;
+  padding: .5rem;
+  width: 20%;
+  color: white;
+  background-color: orange;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
