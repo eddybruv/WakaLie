@@ -10,6 +10,17 @@ function Comments() {
         <div className="feed">
           <p className="feed-text">Daily Feed</p>
           <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
         </div>
       </div>
     </div>

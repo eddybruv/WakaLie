@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { } from "react";
 import { Link } from "react-router-dom";
 
 function UserPanel() {
@@ -23,7 +23,7 @@ function UserPanel() {
       <div className="line"></div>
       <ul>
         <li>
-          <Link to="/feed" onClick={handleSelect}>Daily Feed</Link>
+          <Link to="/feed">Daily Feed</Link>
         </li>
         <li>
           <Link to="/timeline">Timeline</Link>
