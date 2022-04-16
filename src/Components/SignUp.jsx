@@ -11,11 +11,15 @@ function SignUp() {
           <label htmlFor="name">Name</label> <br />
           <input type="text" name="name" /> <br />
           <label htmlFor="phone-number">Phone Number</label> <br />
-          <input type="number" name="phone-number" /> <br />
+          <input type="tel" name="phone-number" /> <br />
           <div className="gender-dob">
             <div>
               <label htmlFor="gender">Gender</label> <br />
-              <input type="text" name="gender" />
+              <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
             </div>
             <div>
               <label htmlFor="dob">DoB</label> <br />
