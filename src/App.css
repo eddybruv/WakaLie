@@ -102,7 +102,7 @@ h2.create-account {
   width: 100%;
 }
 
-.signup-details input {
+.signup-details input,.signup-details select {
   width: 100%;
   margin-bottom: 1rem;
   margin-top: 0.5rem;
@@ -110,6 +110,12 @@ h2.create-account {
   border-radius: 10px;
   font-size: 1.5rem;
   outline: none;
+}
+
+.signup-details select option {
+  background-color: rgb(29, 28, 28);
+  color: white;
+  
 }
 
 .signup-details label {
@@ -137,6 +143,10 @@ h2.create-account {
   margin-left: 0.5rem;
 }
 
+.signup-details .sign-up-button:hover {
+  cursor: pointer;
+}
+
 /*
   ==================================
     Login page
@@ -151,7 +161,7 @@ h2.create-account {
 }
 
 .login-details {
-  width: 50%;
+  width: 40%;
   height: fit-content;
   padding: 1rem;
 }
@@ -160,11 +170,11 @@ h2.login-account {
   color: orange;
   font-weight: bold;
   font-size: 4.5rem;
-  padding: 1rem 0;
+  padding: 3rem 0;
 }
 
 .login-details form {
-  width: 90%;
+  width: 100%;
 }
 
 .login-details input {
@@ -186,6 +196,11 @@ h2.login-account {
   color: white;
   font-size: 1.5rem;
   border-radius: 10px;
+  margin-left: 0.5rem;
+}
+
+.login-details .login-button:hover {
+  cursor: pointer;
 }
 
 .login-details label {
@@ -264,6 +279,10 @@ h2.login-account {
   background-color: #6f5d30;
 }
 
+.active {
+  background-color: #6f5d30;
+}
+
 .user-panel .logout {
   margin-top: auto;
 }
@@ -272,6 +291,12 @@ h2.login-account {
   text-decoration: none;
   color: orange;
   font-size: 1.5rem;
+}
+
+.line {
+  width: 90%;
+  border-top: 2px solid #6f5d30;
+  margin-bottom: 2rem;
 }
 
 .timeline-container .feed {
@@ -367,4 +392,56 @@ h2.login-account {
   border-radius: 10px;
   font-size: 1.3rem;
   font-weight: bold;
+}
+
+/* 
+  =========================
+  Update Profile
+  =========================
+*/
+
+.present-details h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding-bottom: 1rem; 
+}
+
+.present-details p {
+  font-size: 1.3rem;
+}
+
+.present-details p span {
+  font-weight: 100;
+}
+
+.new-details {
+  margin-top: 3rem; 
+}
+
+.new-details h3 {
+  padding-top: 1rem; 
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding-bottom: 1rem; 
+} 
+
+.new-details form input {
+  outline: none;
+  font-size: 1.3rem;
+  padding: .5rem;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.new-details form button {
+  outline: none;
+  font-size: 1.3rem;
+  padding: .5rem;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: orange;
+  font-weight: bold;
+  width: 20%;
 }
