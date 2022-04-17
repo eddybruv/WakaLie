@@ -1,0 +1,53 @@
+- CREATE_USER: 
+  data: {
+    name: String,
+    gender: String,
+    DoB: Date,
+    number: Number,
+    password: String
+  }
+
+-LOGIN: 
+  data: {
+    number: NUmber,
+    password: String
+  }
+
+- UPDATE_PROFILE: 
+  data: {
+    _id: mongoose.ObjectId,
+    name: String,
+    gender: String,
+    DoB: Date,
+    number: Number,
+    password: String
+  }
+
+- DELETE_ACCOUNT: 
+  data: {
+    _id: mongoose.ObjectId,
+    password: String
+  }
+
+- CREATE_POST: 
+  data: {
+    time: Date,
+    message: String,
+    user_id: mongoose.ObjectId,
+  }
+
+- SEE_POST: 
+  data: {
+    
+  }
+
+- UPDATE_POST: 
+  data: {
+    post_id: mongoose.ObjectId,
+    message: String
+  }
+
+- DELETE_POST:
+  data: {
+    post_id:mongoose.ObjectId
+  }
