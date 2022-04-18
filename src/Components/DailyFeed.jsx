@@ -9,13 +9,11 @@ function Comments() {
   const fetchServer = async () => {
     const result = await axios
       .get("http://localhost:5000/api/post/get_post")
-      // .then((data) => console.log(data.data));
-      console.log(result.data[1].user_id);
     setComments(result.data);
   };
 
   useEffect(() => {
-    // console.log(comments);
+    let currentUser = JSON.parse(localStorage.getItem("currentUser"));
   }, [comments]);
 
   useEffect(() => {
