@@ -10,7 +10,7 @@ function Comments() {
     const result = await axios
       .get("http://localhost:5000/api/post/get_post")
       // .then((data) => console.log(data.data));
-      console.log(result.data[1].user_id);
+      // console.log(result)
     setComments(result.data);
   };
 
