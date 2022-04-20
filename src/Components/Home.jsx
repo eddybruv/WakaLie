@@ -13,6 +13,7 @@ function Home() {
           Write out your thoughts and free your mind ✨ <br /> Unlock freedom
           ...
         </p>
+        
 
         <div className="signup-login">
           <div className="signup-text">
