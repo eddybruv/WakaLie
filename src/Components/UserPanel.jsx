@@ -2,15 +2,7 @@ import React, { } from "react";
 import { Link } from "react-router-dom";
 
 function UserPanel() {
-  // let pathname = window?.location.pathname;
-  /* let curPath = window?.location.pathname;
-
-  const handleSelect = (e) => {
-    let isActive = false;
-    let susPath = e.target.href;
-    if (susPath.includes(curPath) !== -1)
-      isActive = true
-  }; */
+  
 
   return (
     <div className="user-panel">
