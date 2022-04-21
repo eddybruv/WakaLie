@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import SignUp from "./Components/SignUp";
 import Login from "./Components/Login";
 import Home from "./Components/Home";
@@ -17,6 +17,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Navigate replace to="/home" />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
         <Route path="/timeline" element={<Timeline />} />
