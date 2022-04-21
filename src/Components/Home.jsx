@@ -12,8 +12,7 @@ function Home() {
         <p className="welcome-text">
           Write out your thoughts and free your mind ✨ <br /> Unlock freedom
           ...
-        </p>
-        
+        </p>        
 
         <div className="signup-login">
           <div className="signup-text">
