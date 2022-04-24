@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# WakaLie
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Don't keep your thoughts to yourself, welcome to WakaLie.
 
-## Available Scripts
+WakaLie is basically an open source text posting platform still in the early stages of development.
 
-In the project directory, you can run:
+![Contributors](https://img.shields.io/github/contributors/eddybruv/Wakalie?color=orange&style=for-the-badge)
+![most languege](https://img.shields.io/github/languages/top/eddybruv/WakaLie?color=orange&style=for-the-badge)
+![License](https://img.shields.io/github/license/eddybruv/Wakalie?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000?&style=for-the-badge&color=orange)
+![stars](https://img.shields.io/github/stars/eddybruv/Wakalie?color=orange&style=for-the-badge)
+![total forks](https://img.shields.io/github/forks/eddybruv/Wakalie?color=orange&style=for-the-badge)
 
-### `npm start`
+<!-- [![Twitter: eddybruv\_](https://img.shields.io/twitter/follow/eddybruv\_.svg?style=social)](https://twitter.com/eddybruv\_) -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ⚡ Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node and npm
+  - Install using this tutorial for [linux/mac](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and [windows](https://phoenixnap.com/kb/install-node-js-npm-on-windows)
 
-### `npm test`
+- MongoDB compass and MongoDB
+  - Follow instructions from the [docs](https://www.mongodb.com/docs/manual/installation/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🔧 Setting up the Project
 
-### `npm run build`
+1. Fork repository
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Clone the forked repository in prefered directory
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone <project-url>
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Enter project directory
+  
+   ```bash
+   cd Wakalie
+   ```
 
-### `npm run eject`
+4. Initialize project
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   git init
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🔮 Running the project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Install dependencies
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    ```bash
+    npm install
+    ```
 
-## Learn More
+2. Start react app (in root of the project folder)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Goto backend
 
-### Code Splitting
+   ```bash
+   cd Backend
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. Start server
 
-### Analyzing the Bundle Size
+   ```node
+   nodemon server
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🚀 Roadmap
 
-### Making a Progressive Web App
+- [x] Build frontend of base pages
+- [x] Build a pre-database that would be used for development
+- [ ] Implement sign up
+- [ ] Implement log in
+- [ ] Remove certain routes for unauthorised users
+- [ ] Save picture when signing up
+- [ ] Implement basic functionalities like posting and updating profile
+- [ ] User pages
+- [ ] more to come...
+- [ ] Lastly, host project
+- [ ] Futher maintainance
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🤝 Contributing
 
-### Advanced Configuration
+If you want to contribute to this project, simply follow the steps in the contribution guide. I look forward to your contributions. 😎 [CONTRIBUTING.md](https://github.com/eddybruv/WakaLie/blob/main/CONTRIBUTING.md)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🙌 Show your support
 
-### Deployment
+Give a ⭐️ if this project helped you!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[![Twitter: eddybruv\_](https://img.shields.io/twitter/follow/eddybruv\_.svg?style=social)](https://twitter.com/eddybruv\_)
