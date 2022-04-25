@@ -52,13 +52,13 @@ function SignUp() {
     let response = await axios
       .post("http://localhost:5000/api/user/create_account", finalUser)
       .then((data) => {
-        console.log(data);
+        return data;
       })
       .catch(() => console.log("nothing works"));
     
     console.log(response);
     if (response.status === 200) {
-      localStorage.setItem("currentUser", JSON.stringify(user));
+      localStorage.setItem("currentUser", JSON.stringify(finalUser));
       navigate("/feed");
     } else {
       alert("Account not registered");
