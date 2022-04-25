@@ -15,10 +15,10 @@ Thank you for investing your time in contributing to our project!
 2. Now clone the forked repository to your PC by running the following command in you terminale. (Don't forget to put your own GitHub username between instead of `{{YOUR GITHUB USERNAME}}`).
 
 ```Git
-git clone https://github.com/{{YOUR GITHUB USERNAME}}/nft-marketplace.git
+git clone https://github.com/{{YOUR GITHUB USERNAME}}/WakaLie.git
 ```
 
-1. Open the project folder or run this command `cd nft-marketplace` to change current working directory.
+1. Open the project folder or run this command `cd WakaLie` to change current working directory.
 
 2. Now run `npm install` to install all the dependencies that the project needs.
 
