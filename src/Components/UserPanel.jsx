@@ -1,17 +1,23 @@
-import React, { } from "react";
-import { Link } from "react-router-dom";
+import { clear } from "@testing-library/user-event/dist/clear";
+import React from "react";
+import { Link, } from "react-router-dom";
 
 function UserPanel() {
-  
 
+  const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+  console.log(currentUser);
+
+  const onLogOut = () => {
+    clear();
+  };
   return (
     <div className="user-panel">
       <img
-        src="https://avatars.githubusercontent.com/u/80322163?v=4"
+        src={currentUser.imageUrl}
         alt=""
         className="user-img"
       />
-      <p className="username">Eddy Bruv</p>
+      <p className="username">{currentUser.name}</p>
       <div className="line"></div>
       <ul>
         <li>
@@ -29,7 +35,7 @@ function UserPanel() {
       </ul>
 
       <p className="logout">
-        <Link to="/home">Logout</Link>
+        <Link to="/home" onClick={onLogOut}>Logout</Link>
       </p>
     </div>
   );
