@@ -12,6 +12,12 @@ router.post("/create_post", (req, res) => {
   res.json({ message: "Post created", data: post });
 });
 
+// get users' post
+router.get("/my_posts", async (req, res) => {
+  const { _id } = req.body;
+  const posts = await PostModel.find({_id})
+})
+
 // see post
 router.get("/get_post", async (req, res) => {
   const posts = await PostModel.find({})
