@@ -6,13 +6,15 @@ function Home() {
   return (
     <div className="welcome-page">
       <div className="welcome">
-        <h2>
-          Welcome to <h1>WakaLie</h1>
-        </h2>
+        <div className="welcome-header">
+          <h2>Welcome to </h2>
+          <h1>WakaLie</h1>
+        </div>
+
         <p className="welcome-text">
           Write out your thoughts and free your mind ✨ <br /> Unlock freedom
           ...
-        </p>        
+        </p>
 
         <div className="signup-login">
           <div className="signup-text">
