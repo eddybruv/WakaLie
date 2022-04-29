@@ -2,10 +2,12 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEllipsisVertical } from "@fortawesome/free-solid-svg-icons";
 
-function Card({ name, message, time }) {
+function Card({ image, name, message, time }) {
   return (
     <div className="personal-card">
-      <img src="https://avatars.githubusercontent.com/u/80322163?v=4" alt="" />
+      <div className="img-div">
+        <img src={image} alt="" />
+      </div>
       <div className="name-time-message">
         <p className="user-name">{name}</p>
         <p className="time">
