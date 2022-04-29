@@ -3,15 +3,11 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faPlusCircle} from '@fortawesome/free-solid-svg-icons'
-import { toBeEmpty } from "@testing-library/jest-dom/dist/matchers";
 
 const preset = "ecy9pmhx";
 
 function SignUp() {
   let navigate = useNavigate();
-
-  const defaultUser =
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaxsYxmW3vXvQOh-M_OM6iZp7d7z-mjcX6jA&usqp=CAU";
 
   const [user, setUser] = useState({
     name: "",
@@ -51,12 +47,6 @@ function SignUp() {
     setImage(e.target.files[0]);
     setPreview(URL.createObjectURL(e.target.files[0]));
   };
-
-  const setPic = (pic) => {
-    if (pic === '')
-      return defaultUser
-    return preview
-  }
 
   const submit = async () => {
     if(checkProperties(user)) {
@@ -103,7 +93,7 @@ function SignUp() {
         <form action="" className="signup-form">
           <div className="profile-pic-div">
             <div>
-              <img src={() => setPreview(preview)} alt="" />
+              <img src={preview} alt="" />
             </div>
             <div>
               <input
