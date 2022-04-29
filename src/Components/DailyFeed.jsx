@@ -5,15 +5,16 @@ import axios from "axios";
 
 function Comments() {
   const [comments, setComments] = useState(null);
+  const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
   const fetchServer = async () => {
     const result = await axios
       .get("http://localhost:5000/api/post/get_post")
-    setComments(result.data);
+      .then((data) => data.data);
+    setComments(result);
   };
 
   useEffect(() => {
-    // let currentUser = JSON.parse(localStorage.getItem("currentUser"));
   }, [comments]);
 
   useEffect(() => {
@@ -33,6 +34,7 @@ function Comments() {
                   message={comment.message}
                   name={comment.user_id.name}
                   time={comment.createdAt}
+                  image={comment.user_id.imageUrl}
                 />
               ))
               .reverse()}
