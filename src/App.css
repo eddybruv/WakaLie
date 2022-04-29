@@ -25,17 +25,21 @@ body {
 }
 
 .welcome h2 {
-  display: flex;
-  align-items: center;
   font-size: 4.5rem;
-  margin-bottom: 2rem;
+  padding: 0 1rem;
   height: fit-content;
 }
 
 .welcome h1 {
-  display: inline-block;
+  /* display: inline-block; */
   color: orange;
   padding: 0 1rem;
+  font-size: 7.5rem;
+}
+
+.welcome-header {
+  display: flex;
+  align-items: center;
 }
 
 .welcome .welcome-text {
@@ -89,6 +93,28 @@ body {
   width: 40%;
   height: fit-content;
   padding: 1rem;
+}
+
+.profile-pic-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up .add-pic-icon {
+  color: #6f5d30;
+  font-size: 2.2rem;
+  width: 100%;
+}
+
+.profile-pic-div img {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #373737;
 }
 
 h2.create-account {
