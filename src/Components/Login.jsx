@@ -8,8 +8,8 @@ function Login() {
       <div className="login-details">
         <h2 className="login-account">Login</h2>
         <form action="" className="login-form">
-          <label htmlFor="phone-number">Phone Number</label> <br />
-          <input type="tel" name="phone-number" /> <br />
+          <label htmlFor="email">Email</label> <br />
+          <input type="email" name="email" placeholder="example@domain.com"/> <br />
           <label htmlFor="password">Password</label> <br />
           <input type="password" name="password" />
           <button
