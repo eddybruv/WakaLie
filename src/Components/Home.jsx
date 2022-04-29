@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 function Home() {
   let navigate = useNavigate();
+  window.localStorage.clear();
   return (
     <div className="welcome-page">
       <div className="welcome">
