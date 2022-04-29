@@ -16,15 +16,15 @@ function UpdateProfile() {
             <p className="password">
               Password : <span>bimamiA4</span>
             </p>
-            <p className="cur-number">
-              Number : <span>673928764</span>
+            <p className="cur-email">
+              Email : <span>example@gmail.com</span>
             </p>
           </div>
           <div className="new-details">
             <h3>New Information</h3>
             <form action="/update" method='post'>
               <input type="text" name="name" placeholder="Enter Name" /> <br />
-              <input type="tel" name="number" placeholder="Enter Number" /> <br />
+              <input type="tel" name="email" placeholder="Enter email" /> <br />
               <input type="password" name="password" placeholder="Enter Password" /> <br />
               <button type='submit'>Submit</button>
             </form>
