@@ -1,17 +1,16 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import SignUp from "./Components/SignUp";
-import Login from "./Components/Login";
-import Home from "./Components/Home";
-import Timeline from "./Components/Timeline";
-import DailyFeed from "./Components/DailyFeed";
-import NewPost from "./Components/NewPost";
-import UpdateProfile from "./Components/UpdateProfile";
-import Error from "./Components/Error";
+import SignUp from "./components/SignUp";
+import Login from "./components/Login";
+import Home from "./components/Home";
+import Timeline from "./components/Timeline";
+import DailyFeed from "./components/DailyFeed";
+import NewPost from "./components/NewPost";
+import UpdateProfile from "./components/UpdateProfile";
+import Error from "./components/Error";
 
 function App() {
   // axios.get("https://api.publicapis.org/entries").then(data=> console.log(data.data));
-  
 
   return (
     <Router>

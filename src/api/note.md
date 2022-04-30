@@ -1,0 +1,1 @@
+## Centralize API calls to one point. This folder could be used to create API classes or functions to handle API calls
