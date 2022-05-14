@@ -66,9 +66,10 @@ body {
   width: 100%;
   background-color: orange;
   color: white;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 0.5rem;
   font-size: 1.5rem;
+  border: none;
 }
 
 .welcome .signup-login button:hover {
@@ -359,6 +360,7 @@ h2.login-account {
   width: 60px;
   height: 60px;
   border-radius: 100%;
+  object-fit: cover;
 }
 
 .personal-card .name-time-message {
