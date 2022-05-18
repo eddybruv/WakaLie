@@ -25,3 +25,12 @@ ul {
 a {
   text-decoration: none;
 }
+
+button {
+  border: none;
+  border-radius: 20px !important;
+}
+
+button:hover {
+  cursor: pointer;
+}
