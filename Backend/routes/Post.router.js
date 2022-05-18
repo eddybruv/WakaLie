@@ -13,9 +13,10 @@ router.post("/create_post", (req, res) => {
 });
 
 // get users' post
-router.get("/my_posts", async (req, res) => {
+router.post("/user_posts", async (req, res) => {
   const { _id } = req.body;
-  const posts = await PostModel.find({_id})
+  const posts = await PostModel.find({user_id: _id}).populate({path: 'user_id'})
+  res.json(posts);
 })
 
 // see post
