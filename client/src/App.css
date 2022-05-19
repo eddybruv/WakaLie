@@ -251,7 +251,7 @@ h2.login-account {
 }
 
 .timeline-container .user-panel {
-  width: 15vw;
+  width: 18vw;
   height: 86vh;
   border: none;
   background-color: #302f2f;
@@ -298,7 +298,7 @@ h2.login-account {
   color: white;
   font-size: 1.3rem;
   padding: 1rem;
-  width: 80%;
+  width: 95%;
   border-radius: 10px;
 }
 
