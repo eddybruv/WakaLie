@@ -22,9 +22,9 @@ function UserPanel() {
         <li>
           <Link to="/new">New Post</Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/update">Profile</Link>
-        </li>
+        </li> */}
       </ul>
 
       <p className="logout">
