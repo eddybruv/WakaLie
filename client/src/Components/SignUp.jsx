@@ -30,6 +30,8 @@ function SignUp() {
 
   const checkProperties = (user) => {
     if (
+      preview === "" ||
+      image === "" ||
       user.name === "" ||
       user.email === "" ||
       user.password === "" ||
@@ -75,7 +77,7 @@ function SignUp() {
       if (response.status === 200) {
         URL.revokeObjectURL(preview);
         setPreview('')
-        localStorage.setItem("currentUser", JSON.stringify(finalUser));
+        localStorage.setItem("currentUser", JSON.stringify(response.data.data));
         navigate("/feed");
       } else {
         alert("Account not registered");
