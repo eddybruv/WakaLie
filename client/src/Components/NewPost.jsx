@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import UserPanel from "./UserPanel";
 import axios from "axios";
@@ -13,9 +13,8 @@ function NewPost() {
     setMessage(event.target.value);
   };
   const submit = async () => {
-    console.log(currentUser);
     const response = await axios.post(
-      "http://localhost:5000/api/post/create_post",
+      "/api/post/create_post",
       { message, user_id: currentUser._id }
     );
 

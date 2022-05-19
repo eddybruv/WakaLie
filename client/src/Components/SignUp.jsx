@@ -60,21 +60,18 @@ function SignUp() {
           return data.data.secure_url;
         })
         .catch(() => {
-          console.log("Doesn't work");
+          alert("Experienced an error, contact Eddy");
         });
-      console.log(res);
       const imageUrl = res;
 
       const finalUser = { ...user, imageUrl };
-      console.log(finalUser);
       let response = await axios
-        .post("http://localhost:5000/api/user/create_account", finalUser)
+        .post("/api/user/create_account", finalUser)
         .then((data) => {
           return data;
         })
-        .catch(() => console.log("nothing works"));
+        .catch(() => alert("nothing works"));
 
-      console.log(response);
       if (response.status === 200) {
         URL.revokeObjectURL(preview);
         setPreview('')

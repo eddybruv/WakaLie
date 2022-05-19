@@ -38,7 +38,6 @@ function Login() {
           alert('User not found!\n Correct details or Sign up!');
           setUser({ email: "", password: "" });
         } else {
-          console.log(result.data.user);
           const currentUser = result.data.user;
           localStorage.setItem("currentUser", JSON.stringify(currentUser));
           navigate("/feed");

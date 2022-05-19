@@ -11,7 +11,7 @@ function Timeline() {
   useEffect(() => {
     const fetchServer = async () => {
       const result = await axios
-        .post("http://localhost:5000/api/post/user_posts", { _id: user._id })
+        .post("/api/post/user_posts", { _id: user._id })
         .then((data) => data.data)
         .catch(() => console.log("Doesnt work"));
       setPosts(result);

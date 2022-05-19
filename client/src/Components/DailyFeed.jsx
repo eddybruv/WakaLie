@@ -5,11 +5,10 @@ import axios from "axios";
 
 function Comments() {
   const [comments, setComments] = useState(null);
-  const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
   const fetchServer = async () => {
     const result = await axios
-      .get("http://localhost:5000/api/post/get_post")
+      .get("/api/post/get_post")
       .then((data) => data.data);
     setComments(result);
   };
