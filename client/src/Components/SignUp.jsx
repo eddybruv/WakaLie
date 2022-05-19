@@ -14,7 +14,7 @@ function SignUp() {
     email: "",
     password: "",
     dob: "",
-    gender: "",
+    gender: "male",
   });
 
   const [image, setImage] = useState("");
@@ -37,7 +37,7 @@ function SignUp() {
       user.gender === ""
     ) {
       alert("Please fill all input fields!");
-      setUser({ name: "", email: "", password: "", dob: "", gender: "" });
+      setUser({ name: "", email: "", password: "", dob: "", gender: "male" });
       return false;
     }
     return true;
