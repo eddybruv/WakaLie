@@ -3,6 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEllipsisVertical } from "@fortawesome/free-solid-svg-icons";
 
 function Card({ image, name, message, time }) {
+
+  const [isOpen, setIsOpen] = React.useState(false);
+
   return (
     <div className="personal-card">
       <div className="img-div">
@@ -15,7 +18,17 @@ function Card({ image, name, message, time }) {
         </p>
         <p className="message">{message}</p>
       </div>
-      <FontAwesomeIcon className="ellipsis" icon={faEllipsisVertical} />
+      <div onClick={() => setIsOpen(true)}>
+        <FontAwesomeIcon className="ellipsis" icon={faEllipsisVertical} />
+        </div>
+      <aside className={`card-menu ${isOpen? 'show'  : 'hide'}`}>
+        <div className="card-menu-bg" onClick={() => setIsOpen(false)}></div>
+        <ul>
+          <li>Like</li>
+          <li>Favorites</li>
+          <li>Bookmark</li>
+        </ul>
+      </aside>
     </div>
   );
 }

@@ -354,6 +354,7 @@ h2.login-account {
   gap: 1rem;
   border-radius: 20px;
   margin-bottom: 1rem;
+  position: relative;
 }
 
 .personal-card img {
@@ -390,6 +391,80 @@ h2.login-account {
   font-size: 1.3rem;
   font-weight: 300;
   margin-bottom: 0.5rem;
+}
+
+.show{
+  display: flex;
+  animation: popIn 0.3s ease-in-out;
+}
+
+.hide{
+  display: none;
+}
+
+.card-menu {
+  width: min(116px, fit-content);
+  height: min(135px, fit-content);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+  padding: 3px 5px;
+  border: 1px solid #6f5d30;
+  border-radius: 5px;
+  position: absolute;
+  left: 87.5%;
+  top: 3;
+  background-color: rgba(255, 255, 255, 0.322);
+  /* color: #302f2f; */
+}
+
+.card-menu ul{
+  z-index: 100;
+}
+
+.card-menu ul li{
+  list-style: none;
+  width: 100%;
+  padding: 0.5rem;
+  /* margin: 0.5rem; */
+  /* background-color: #6f5d30;
+  color: white; */
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.card-menu ul li:hover {
+  background-color: #dba43f;
+  color: white;
+}
+
+.card-menu-bg{
+  position: absolute;
+  left: -74vw;
+  top: -100vh;
+  width: 95vw;
+  height: 200vh;
+  background-color: rgba(211, 26, 26, 0);
+  border-radius: 20px;
+  z-index: 10;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+
+  }
+  80% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /* 
